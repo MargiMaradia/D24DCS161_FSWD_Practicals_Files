@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Practical 1</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <div class="container">
+    <h2>Vote for Your Favorite Language</h2>
+    <div class="poll">
+      <button onclick="vote('JavaScript')"><b>JavaScript</b></button>
+      <button onclick="vote('Python')"><b>Python</b></button>
+      <button onclick="vote('Java')"><b>Java</b></button>
+    </div>
+    <div class="results">
+        <h2> Results </h2>
+      <p><b>JavaScript: <span id="JavaScript">0</span></b></p>
+      <p><b>Python: <span id="Python">0</span></b></p>
+      <p><b>Java: <span id="Java">0</span></b></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

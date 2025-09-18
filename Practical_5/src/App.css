@@ -1,0 +1,88 @@
+/* App.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dddad4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    width: 320px;
+    background-color: rgb(80, 241, 11);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.screen input {
+    height: 40px;
+    font-size: 1.5em;
+    padding: 5px;
+    border: 1px solid #0e0303;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    text-align: right;
+}
+
+.button-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    background-color: #160c0c;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: #160c0c;
+}
+
+button:active {
+    background-color: #160c0c}
+
+/* Styles for the equals button */
+.equals {
+    background-color: #4431d6;
+    /* Green background */
+    color: white;
+    /* White text */
+}
+
+.equals:hover {
+    background-color: #4431d6;
+    /* Darker green on hover */
+}
+
+/* Styles for the clear button */
+.clear {
+    background-color: #eb3f0a;
+    /* Red background */
+    color: white;
+    /* White text */
+}
+
+.clear:hover {
+    background-color: #eb3f0a;
+    /* Darker red on hover */
+}

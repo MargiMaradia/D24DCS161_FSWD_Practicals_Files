@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #8758ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: #1A1A40;
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  width: 350px;
+}
+
+.TodoForm {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.todo-input {
+  outline: none;
+  background: none;
+  border: 1px solid #8758ff;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  width: 100%;
+  color: #fff;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.todo-input:focus {
+  border-color: #c5aeff;
+}
+
+.todo-input::placeholder {
+  color: #ffffff99;
+}
+
+.todo-btn {
+  background: #8758ff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.todo-btn:hover {
+  background: #a07aff;
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 0.75rem;
+  flex-direction: column;
+  position: relative;
+}
+
+.Todo .task-text {
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.incompleted {
+  color: #fff;
+}
+
+.completed {
+  color: #c5aeff;
+  text-decoration: line-through;
+}
+
+.overdue-task {
+  border: 1px solid #ff4d4f;
+  background: #ff4d4f33;
+}
+
+.overdue-warning {
+  color: #ff4d4f;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.recurrence {
+  font-size: 0.85rem;
+  color: #ffe066;
+}
+
+.due-date {
+  font-size: 0.85rem;
+  color: #d3d3d3;
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  display: flex;
+  gap: 10px;
+  margin-top: 0.5rem;
+}
+
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  font-size: 1.1rem;
+}
+
+.edit-icon {
+  color: #ffe066;
+}
+
+.delete-icon {
+  color: #ff4d4f;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+/* 🎯 Gamification Score Styling */
+.score {
+  color: #ffe066;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Style dropdown same as inputs */
+.todo-input select,
+.todo-input option {
+  background-color: #1A1A40; /* Dark background */
+  color: #fff; /* White text */
+  border: none;
+  outline: none;
+}
+
+.todo-input select {
+  padding: 0.5rem 1rem;
+  border: 1px solid #8758ff;
+  border-radius: 5px;
+  appearance: none; /* Removes browser default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 10'%3E%3Cpath fill='%23fff' d='M0 3l5 5 5-5z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.7rem center;
+  background-size: 0.65rem;
+}
+
+.todo-input option {
+  background-color: #1A1A40;
+  color: #fff;
+}
+
