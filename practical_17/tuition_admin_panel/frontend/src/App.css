@@ -1,0 +1,114 @@
+.app-container {
+  background: #f4f6f9;
+  min-height: 100vh;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.panel {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 900px;
+}
+
+.title {
+  text-align: center;
+  color: #4f46e5;
+  margin-bottom: 20px;
+}
+
+.student-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.student-form input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.student-form button {
+  grid-column: span 2;
+  padding: 12px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.student-form button:hover {
+  background: #3730a3;
+}
+
+.student-list h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.student-list table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.student-list th, .student-list td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.student-list tr:hover {
+  background: #f9fafb;
+}
+
+button.edit {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+button.delete {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.save {
+  background: #10b981;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+button.cancel {
+  background: #9ca3af;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.empty {
+  color: #777;
+  font-style: italic;
+}
